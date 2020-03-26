@@ -2,26 +2,159 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Toucans-Team-06 Voyage-7">
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>The CSS Grid Layout Module</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-        </nav>
-    </header>
+	<!-- freeCodeCamp Test Suite -->
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<div class="wrapper">
+		<nav id="navbar">
+			<header>CSS Grid Layout Module</header>
+			<ul>
+				<li><a class="nav-link" href="#grid_layout">Grid Layout</a></li>
+				<li><a class="nav-link" href="#browser_support">Browser Support</a></li>
+				<li><a class="nav-link" href="#grid_elements">Grid Elements</a></li>
+				<li><a class="nav-link" href="#display_property">Display Property</a></li>
+				<li><a class="nav-link" href="#grid_columns">Grid Columns</a></li>
+				<li><a class="nav-link" href="#grid_rows">Grid Rows</a></li>
+				<li><a class="nav-link" href="#grid_gaps">Grid Gaps</a></li>
+				<li><a class="nav-link" href="#grid_lines">Grid Lines</a></li>
+				<li><a class="nav-link" href="#references">References</a></li>
+			</ul>
+		</nav>
 
-    <main>
-    </main>
+		<main id="main-doc">
+			<section class="main-section" id="grid_layout">
+				<header>Grid Layout</header>
+				<p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier
+					to
+					design web pages without having to use floats and positioning.</p>
+			</section>
 
-    <footer>
-    </footer>
+			<section class="main-section" id="browser_support">
+				<header>Browser Support</header>
+				<p>The grid properties are supported in all modern browsers.</p>
+				<!-- Insert browser versions -->
+			</section>
+
+			<section class="main-section" id="grid_elements">
+				<header>Grid Elements</header>
+				<p>A grid layout consists of a parent element, with one or more child elements.</p>
+				<code>
+					&#60;div class="grid-container"&#62;
+					&#60;div class="grid-item"&#62;1&#60;/div&#62;
+					&#60;div class="grid-item"&#62;2&#60;/div&#62;
+					&#60;div class="grid-item"&#62;3&#60;/div&#62;
+					&#60;div class="grid-item"&#62;4&#60;/div&#62;
+					&#60;div class="grid-item"&#62;5&#60;/div&#62;
+					&#60;div class="grid-item"&#62;6&#60;/div&#62;
+					&#60;div class="grid-item"&#62;7&#60;/div&#62;
+					&#60;div class="grid-item"&#62;8&#60;/div&#62;
+					&#60;div class="grid-item"&#62;9&#60;/div&#62;
+					&#60;/div&#62;
+				</code>
+				<img src="images/grid-elements.png">
+			</section>
+
+			<section class="main-section" id="display_property">
+				<header>Display Property</header>
+				<p>An HTML element becomes a grid container when its display property is set to grid or inline-grid.</p>
+				<code>
+					.grid-container {
+					display: grid;
+					}
+				</code>
+				<code>
+					.grid-container {
+					display: inline-grid;
+					}
+				</code>
+				<p>All direct children of the grid container automatically become grid items.</p>
+			</section>
+
+			<section class="main-section" id="grid_columns">
+				<header>Grid Columns</header>
+				<p>The vertical lines of grid items are called columns.</p>
+				<img src="images/grid-columns.png">
+			</section>
+
+			<section class="main-section" id="grid_rows">
+				<header>Grid Rows</header>
+				<p>The horizontal lines of grid items are called rows.</p>
+				<img src="images/grid-rows.png">
+			</section>
+
+			<section class="main-section" id="grid_gaps">
+				<header>Grid Gaps</header>
+				<p>The spaces between each column/row are called gaps.</p>
+				<img src="images/grid-gaps.png">
+				<p>You can adjust the gap size by using one of the following properties:</p>
+				<ul>
+					<li>grid-column-gap</li>
+					<li>grid-row-gap</li>
+					<li>grid-gap</li>
+				</ul>
+				<p>The grid-column-gap property sets the gap between the columns:</p>
+				<code>
+					.grid-container {
+					display: grid;
+					grid-column-gap: 50px;
+					}
+				</code>
+				<p>The grid-row-gap property sets the gap between the rows:</p>
+				<code>
+					.grid-container {
+					display: grid;
+					grid-row-gap: 50px;
+					}
+				</code>
+				<p>The grid-gap property is a shorthand property for the grid-column-gap and the grid-row-gap
+					properties:
+				</p>
+				<code>
+					.grid-container {
+					display: grid;
+					grid-gap: 50px 100px;
+					}
+				</code>
+				<p>The grid-gap property can also be used to set both the row gap and the column gap in one value:</p>
+				<code>
+					.grid-container {
+					display: grid;
+					grid-gap: 50px;
+					}
+				</code>
+			</section>
+
+			<section class="main-section" id="grid_lines">
+				<header>Grid Lines</header>
+				<The>The lines between columns are called <em>column lines</em> and the lines between rows are called
+					<em>row lines</em>.</p>
+					<img src="images/grid-lines.png">
+					<p>Refer to line numbers when placing a grid item in a grid container:</p>
+					<p>Place a grid item at column line 1, and let it end on column line 3:</p>
+					<code>
+						.item1 {
+						grid-column-start: 1;
+						grid-column-end: 3;
+						}
+					</code>
+			</section>
+
+			<section class="main-section" id="references">
+				<header>References</header>
+				<ul>
+					<li><a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">w3schools</a></li>
+					<li>Reference 2</li>
+				</ul>
+			</section>
+		</main>
+	</div>
 </body>
 
 </html>

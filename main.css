@@ -1,2 +1,25 @@
-/* Global */
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-template-areas:
+		"navbar main"
+}
 
+nav {
+	grid-area: navbar;
+	position: fixed;
+}
+
+main {
+	grid-area: main;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+code {
+	white-space: pre;
+}

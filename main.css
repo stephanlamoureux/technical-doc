@@ -2,7 +2,7 @@
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 	grid-template-areas:
-		"navbar main"
+		"navbar main";
 }
 
 nav {
@@ -22,4 +22,8 @@ nav ul {
 
 code {
 	white-space: pre;
+}
+
+@media (max width: 425px) {
+
 }

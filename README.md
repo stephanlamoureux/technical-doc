@@ -3,6 +3,7 @@
 ### Objective
 
 Build a CodePen.io app that is functionally similar to [this.](https://codepen.io/freeCodeCamp/full/NdrKKL)
+
 Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
 
 ### Technology Stack
@@ -32,4 +33,4 @@ Once you're done, submit the URL to your working project with all its tests pass
 - Remember to use the Read-Search-Ask method if you get stuck.
 
 ### Completed Project
-https//slamoureux.github.io/technical-doc/
+https://slamoureux.github.io/technical-doc/

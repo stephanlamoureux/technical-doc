@@ -1,4 +1,5 @@
-# Applied Responsive Web Design Projects: Build A Technical Documentation Page
+# Responsive Web Design Projects:
+## Build A Technical Documentation Page
 
 ### Objective
 

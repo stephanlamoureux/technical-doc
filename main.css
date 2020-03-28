@@ -54,12 +54,29 @@ main {
 
 header {
 	font-size: 1.3rem;
-	font-weight: bold;
+	font-weight: thin;
 }
 
 .nav-header {
 	font-size: 1.5rem;
 	padding: 20px;
+}
+
+section header {
+	padding-bottom: 10px;
+}
+
+section p {
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+
+section ul {
+	list-style-type: square;
+}
+
+section li {
+	margin: 15px 0px 0px 20px;
 }
 
 code {
@@ -68,13 +85,24 @@ code {
 	background-color: #deeafc;
 	border-radius: 5px;
 	line-height: 1.5;
-	margin: 20px;
+	margin: 20px 20px 20px 35px;
 	padding: 0 15px;
 }
 
+.ref:link,
+.ref:visited,
+.ref:active {
+	color: dodgerblue;
+	text-decoration: none;
+}
+
+.ref:hover {
+	text-decoration: underline;
+	color: dodgerblue;
+}
 footer {
 	border-top: 1px solid lightgray;
-	margin-top: 30px;
+	margin-top: 40px;
 	padding-top: 5px;
 }
 

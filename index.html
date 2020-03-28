@@ -34,12 +34,12 @@
 			<section class="main-section" id="grid_layout">
 				<header class="title">Grid Layout</header>
 				<p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
+				<p>Like tables, grid layout enables an author to align elements into columns and rows. However, many more layouts are either possible or easier with CSS grid than they were with tables. For example, a grid container's child elements could position themselves so they actually overlap and layer, similar to CSS positioned elements.</p>
 			</section>
 
 			<section class="main-section" id="browser_support">
 				<header>Browser Support</header>
-				<p>The grid properties are supported in all modern browsers.</p>
-				<!-- Insert browser versions -->
+				<p>Other than in Internet Explorer, CSS Grid Layout is unprefixed in Safari, Chrome, Opera,  Firefox and Edge. Support for all the properties and values detailed in these guides is interoperable across browsers. This means that if you write some Grid Layout code in Firefox, it should work in the same way in Chrome. This is no longer an experimental specification, and you are safe to use it in production.</p>
 			</section>
 
 			<section class="main-section" id="grid_elements">
@@ -62,7 +62,7 @@
 
 			<section class="main-section" id="display_property">
 				<header>Display Property</header>
-				<p>An HTML element becomes a grid container when its display property is set to grid or inline-grid.</p>
+				<p>We create a grid container by declaring display: grid or display: inline-grid on an element. As soon as we do this, all direct children of that element become grid items.</p>
 				<code>
 .grid-container {
 	display: grid;
@@ -72,22 +72,23 @@
 	display: inline-grid;
 }
 				</code>
-				<p>All direct children of the grid container automatically become grid items.</p>
 			</section>
 
 			<section class="main-section" id="grid_columns">
 				<header>Grid Columns</header>
-				<p>The vertical lines of grid items are called columns.</p>
+				<p>A grid column is a vertical track in a CSS Grid Layout, and is the space between two vertical grid lines. It is defined by the grid-template-columns property or in the shorthand grid or grid-template properties.</p>
+				<p>In addition, columns may be created in the implicit grid when items are placed outside of columns created in the explicit grid. These columns will be auto-sized by default, or can have a size specified with the grid-auto-columns property. When working with alignment in CSS Grid Layout, the axis down which columns run is known as the block, or column, axis.</p>
 			</section>
 
 			<section class="main-section" id="grid_rows">
 				<header>Grid Rows</header>
-				<p>The horizontal lines of grid items are called rows.</p>
+				<p>A grid row is a horizontal track in a CSS Grid Layout, that is the space between two horizontal grid lines. It is defined by the grid-template-rows property or in the shorthand grid or grid-template properties.</p>
+				<p>In addition, rows may be created in the implicit grid when items are placed outside of rows created in the explicit grid. These rows will be auto sized by default, or can have a size specified with the grid-auto-rows property. When working with alignment in CSS Grid Layout, the axis along which rows run is known as the inline, or row, axis.</p>
 			</section>
 
 			<section class="main-section" id="grid_gaps">
 				<header>Grid Gaps</header>
-				<p>The spaces between each column/row are called gaps.</p>
+				<p>The spaces between each column/row are called gaps. Instead of creating empty grid tracks or trying to hack things up with margins, grid-gap is a property available on grid containers that makes it easy to create gutters in your CSS Grid layouts.</p>
 				<p>You can adjust the gap size by using one of the following properties:</p>
 				<ul>
 					<li>grid-column-gap</li>
@@ -128,8 +129,8 @@
 
 			<section class="main-section" id="grid_lines">
 				<header>Grid Lines</header>
-				<p>The lines between columns are called column lines and the lines between rows are called row lines.</p>
-				<p>Place a grid item at column line 1, and let it end on column line 3:</p>
+				<p>The lines between columns are called column lines and the lines between rows are called row lines, they are created when you define tracks in the explicit grid.</p>
+				<p>A grid item starting at column line 1, that ends on column line 3:</p>
 				<code>
 .item1 {
 	grid-column-start: 1;
@@ -142,8 +143,8 @@
 				<header>References</header>
 				<p>All content taken from:</p>
 				<ul>
-					<li><a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">w3schools</a></li>
-					<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid" target="_blank">MDN</a></li>
+					<li><a href="https://www.w3schools.com/css/css_grid.asp" target="_blank" class="ref">w3schools</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/" target="_blank" class="ref">MDN</a></li>
 				</ul>
 			</section>
 		</main>

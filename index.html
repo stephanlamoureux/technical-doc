@@ -14,7 +14,7 @@
 	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	<div class="wrapper">
 		<nav id="navbar">
-			<header>CSS Grid Layout Module</header>
+			<header class="nav-header">CSS Grid Layout Module</header>
 			<ul>
 				<li><a class="nav-link" href="#grid_layout">Grid Layout</a></li>
 				<li><a class="nav-link" href="#browser_support">Browser Support</a></li>
@@ -30,10 +30,8 @@
 
 		<main id="main-doc">
 			<section class="main-section" id="grid_layout">
-				<header>Grid Layout</header>
-				<p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier
-					to
-					design web pages without having to use floats and positioning.</p>
+				<header class="title">Grid Layout</header>
+				<p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
 			</section>
 
 			<section class="main-section" id="browser_support">
@@ -43,8 +41,9 @@
 			</section>
 
 			<section class="main-section" id="grid_elements">
-				<header>Grid Elements</header>
+				<header class="title">Grid Elements</header>
 				<p>A grid layout consists of a parent element, with one or more child elements.</p>
+				<img src="images/grid-elements.png">
 				<code>
 					&#60;div class="grid-container"&#62;
 						&#60;div class="grid-item"&#62;1&#60;/div&#62;
@@ -58,11 +57,10 @@
 						&#60;div class="grid-item"&#62;9&#60;/div&#62;
 					&#60;/div&#62;
 				</code>
-				<img src="images/grid-elements.png">
 			</section>
 
 			<section class="main-section" id="display_property">
-				<header>Display Property</header>
+				<header class="title">Display Property</header>
 				<p>An HTML element becomes a grid container when its display property is set to grid or inline-grid.</p>
 				<code>
 					.grid-container {
@@ -78,19 +76,19 @@
 			</section>
 
 			<section class="main-section" id="grid_columns">
-				<header>Grid Columns</header>
+				<header class="title">Grid Columns</header>
 				<p>The vertical lines of grid items are called columns.</p>
 				<img src="images/grid-columns.png">
 			</section>
 
 			<section class="main-section" id="grid_rows">
-				<header>Grid Rows</header>
+				<header class="title">Grid Rows</header>
 				<p>The horizontal lines of grid items are called rows.</p>
 				<img src="images/grid-rows.png">
 			</section>
 
 			<section class="main-section" id="grid_gaps">
-				<header>Grid Gaps</header>
+				<header class="title">Grid Gaps</header>
 				<p>The spaces between each column/row are called gaps.</p>
 				<img src="images/grid-gaps.png">
 				<p>You can adjust the gap size by using one of the following properties:</p>
@@ -132,7 +130,7 @@
 			</section>
 
 			<section class="main-section" id="grid_lines">
-				<header>Grid Lines</header>
+				<header class="title">Grid Lines</header>
 				<p>The lines between columns are called <em>column lines</em> and the lines between rows are called<em>row lines</em>.</p>
 				<img src="images/grid-lines.png">
 				<p>Refer to line numbers when placing a grid item in a grid container:</p>
@@ -146,7 +144,7 @@
 			</section>
 
 			<section class="main-section" id="references">
-				<header>References</header>
+				<header class="title">References</header>
 				<ul>
 					<li><a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">w3schools</a></li>
 					<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid" target="_blank">MDN</a></li>

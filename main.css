@@ -1,17 +1,14 @@
 .wrapper {
 	display: grid;
-	grid-template-columns: 1fr 3fr;
+	grid-template-columns: minmax(300px, auto) 1fr;
 	grid-template-areas:
 		"navbar main";
+	grid-gap: 20px;
 }
 
 nav {
 	grid-area: navbar;
 	position: fixed;
-}
-
-main {
-	grid-area: main;
 }
 
 nav ul {
@@ -20,15 +17,49 @@ nav ul {
 	padding: 0;
 }
 
-code {
-	white-space: pre;
+.nav-link {
+	display: block;
+	border: 1px solid black;
+	padding: 5px;
+	margin: 10px 0;
+	text-decoration: none;
+	font-size: 1.2rem;
 }
 
-@media (max-width: 425px) {
+.nav-link:link,
+.nav-link:visited {
+	color: black;
+}
+
+.nav-link:hover {
+	color: white;
+	background-color: black;
+}
+
+main {
+	grid-area: main;
+}
+
+header {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+code {
+	white-space: pre;
+	display: block;
+	background-color: lightgrey;
+
+}
+
+@media screen and (max-width: 750px) {
 	.wrapper {
-		grid-template-columns: 1fr 3fr;
+		grid-template-columns: 1fr;
 		grid-template-areas:
-			"navbar"
-			"main";
+			"navbar" "main";
+	}
+
+	nav {
+		position: inherit;
 	}
 }

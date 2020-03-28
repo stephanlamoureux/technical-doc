@@ -1,5 +1,6 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f7f7f7;
 }
 
 .wrapper {
@@ -7,12 +8,14 @@ body {
 	grid-template-columns: minmax(200px, auto) 1fr;
 	grid-template-areas:
 		"navbar main";
-	grid-gap: 40px;
+	grid-gap: 80px;
 }
 
 nav {
 	grid-area: navbar;
 	position: fixed;
+	border-bottom: 1px solid black;
+	border-right: 2px solid black;
 }
 
 nav ul {
@@ -21,11 +24,15 @@ nav ul {
 	padding: 0;
 }
 
+nav li {
+	width: 100%;
+	border-top: 1px solid black;
+}
+
 .nav-link {
 	display: block;
-	border: 1px solid black;
-	padding: 5px;
-	margin: 10px 0;
+	padding: 10px 0 10px 20px;
+	margin: 0;
 	text-decoration: none;
 	font-size: 1.1rem;
 }
@@ -36,12 +43,13 @@ nav ul {
 }
 
 .nav-link:hover {
-	color: white;
+	color: #f7f7f7;
 	background-color: black;
 }
 
 main {
 	grid-area: main;
+	padding-top: 20px;
 }
 
 header {
@@ -51,7 +59,7 @@ header {
 
 .nav-header {
 	font-size: 1.5rem;
-	padding: 0;
+	padding: 20px;
 }
 
 code {
@@ -69,13 +77,23 @@ code {
 		grid-template-columns: 1fr;
 		grid-template-areas:
 			"navbar""main";
+		grid-gap: 20px;
 	}
 
 	nav {
 		position: inherit;
+		border-right: none;
+	}
+
+	nav header {
+		text-align: center;
 	}
 
 	nav li {
 		text-align: center;
+	}
+
+	.nav-link {
+		padding: 10px 0;
 	}
 }

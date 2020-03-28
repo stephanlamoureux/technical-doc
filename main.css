@@ -4,10 +4,10 @@ body {
 
 .wrapper {
 	display: grid;
-	grid-template-columns: minmax(300px, auto) 1fr;
+	grid-template-columns: minmax(200px, auto) 1fr;
 	grid-template-areas:
 		"navbar main";
-	grid-gap: 20px;
+	grid-gap: 40px;
 }
 
 nav {
@@ -27,7 +27,7 @@ nav ul {
 	padding: 5px;
 	margin: 10px 0;
 	text-decoration: none;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 }
 
 .nav-link:link,
@@ -45,8 +45,13 @@ main {
 }
 
 header {
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	font-weight: bold;
+}
+
+.nav-header {
+	font-size: 1.5rem;
+	padding: 0;
 }
 
 code {
@@ -68,5 +73,9 @@ code {
 
 	nav {
 		position: inherit;
+	}
+
+	nav li {
+		text-align: center;
 	}
 }

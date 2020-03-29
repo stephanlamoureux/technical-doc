@@ -61,7 +61,7 @@ nav li {
 .nav-link-last:hover {
 	color: #f7f7f7;
 	background-color: dodgerblue;
-	border-bottom-right-radius: .8em;
+	border-bottom-right-radius: .78rem;
 }
 
 header {
@@ -177,10 +177,8 @@ footer a:hover {
 
 	nav header {
 		text-align: center;
-	}
-
-	nav ul {
-		margin-left: -10px;
+		width: 95%;
+		margin: 0 auto;
 	}
 
 	nav li {
@@ -194,13 +192,13 @@ footer a:hover {
 	.nav-link-first:hover {
 		color: #f7f7f7;
 		background-color: dodgerblue;
-		border-top-right-radius: .8em;
-		border-top-left-radius: .8em;
+		border-top-right-radius: .78rem;
+		border-top-left-radius: .78rem;
 	}
 
 	.nav-link-last:hover {
 		color: #f7f7f7;
 		background-color: dodgerblue;
-		border-bottom-left-radius: .8em;
+		border-bottom-left-radius: .78rem;
 	}
 }

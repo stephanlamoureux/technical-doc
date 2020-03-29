@@ -159,6 +159,7 @@ footer a:hover {
 	nav {
 		position: inherit;
 		border-right: none;
+		border-radius: 1rem;
 	}
 
 	nav header {
@@ -167,6 +168,10 @@ footer a:hover {
 
 	nav li {
 		text-align: center;
+	}
+
+	nav li:first-child {
+		border-radius: 1rem;
 	}
 
 	.nav-link {

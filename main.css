@@ -9,7 +9,7 @@ body {
 	grid-template-columns: minmax(200px, auto) 1fr;
 	grid-template-areas:
 		"navbar main";
-	grid-gap: 80px;
+	grid-column-gap: 80px;
 }
 
 nav {
@@ -78,7 +78,7 @@ header {
 
 main {
 	grid-area: main;
-	padding-top: 25px;
+	padding: 25px 50px 0 0;
 }
 
 section {
@@ -210,5 +210,15 @@ footer a:hover {
 		color: white;
 		background-color: steelblue;
 		border-bottom-left-radius: .78rem;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.wrapper {
+		grid-column-gap: 40px;
+	}
+
+	main {
+		padding: 25px 20px 0 20px;
 	}
 }

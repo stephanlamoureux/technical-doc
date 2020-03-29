@@ -33,7 +33,9 @@ nav li {
 	border-top: 1px solid slategray;
 }
 
-.nav-link {
+.nav-link,
+.nav-link-first,
+.nav-link-last {
 	display: block;
 	padding: 10px 0 10px 20px;
 	margin: 0;
@@ -42,13 +44,24 @@ nav li {
 }
 
 .nav-link:link,
+.nav-link-first:link,
+.nav-link-last:link,
+.nav-link-first:visited,
+.nav-link-last:visited,
 .nav-link:visited {
 	color: black;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link-first:hover {
 	color: #f7f7f7;
 	background-color: dodgerblue;
+}
+
+.nav-link-last:hover {
+	color: #f7f7f7;
+	background-color: dodgerblue;
+	border-bottom-right-radius: .8em;
 }
 
 header {
@@ -166,6 +179,10 @@ footer a:hover {
 		text-align: center;
 	}
 
+	nav ul {
+		margin-left: -10px;
+	}
+
 	nav li {
 		text-align: center;
 	}
@@ -174,7 +191,16 @@ footer a:hover {
 		border-radius: 1rem;
 	}
 
-	.nav-link {
-		padding: 10px 0;
+	.nav-link-first:hover {
+		color: #f7f7f7;
+		background-color: dodgerblue;
+		border-top-right-radius: .8em;
+		border-top-left-radius: .8em;
+	}
+
+	.nav-link-last:hover {
+		color: #f7f7f7;
+		background-color: dodgerblue;
+		border-bottom-left-radius: .8em;
 	}
 }

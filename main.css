@@ -173,10 +173,17 @@ footer a:hover {
 		grid-gap: 20px;
 	}
 
+	main {
+		padding: 0 20px;
+	}
+
 	nav {
 		position: inherit;
 		border-right: none;
 		border-radius: 1rem;
+		height: 220px;
+		overflow-x: hidden;
+		overflow-y: auto;
 	}
 
 	nav header {

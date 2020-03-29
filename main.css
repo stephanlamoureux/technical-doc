@@ -1,6 +1,7 @@
 body {
 	font-family: "Open Sans", Arial, Helvetica;
 	background-color: #f7f7f7;
+	margin: 0;
 }
 
 .wrapper {
@@ -14,8 +15,10 @@ body {
 nav {
 	grid-area: navbar;
 	position: fixed;
-	border-bottom: 1px solid black;
-	border-right: 2px solid black;
+	border-bottom: 1px solid slategray;
+	border-right: 2px solid slategray;
+	border-bottom-right-radius: 1rem;
+	border-top-right-radius: 1rem;
 }
 
 nav ul {
@@ -27,7 +30,7 @@ nav ul {
 
 nav li {
 	width: 100%;
-	border-top: 1px solid black;
+	border-top: 1px solid slategray;
 }
 
 .nav-link {

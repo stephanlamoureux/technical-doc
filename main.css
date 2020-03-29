@@ -90,7 +90,7 @@ section header {
 }
 
 section p {
-	padding-left: 20px;
+	padding: 0 20px;
 }
 
 section ul {

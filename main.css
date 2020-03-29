@@ -1,6 +1,6 @@
 body {
 	font-family: "Open Sans", Arial, Helvetica;
-	background-color: #f7f7f7;
+	background-color: white;
 	margin: 0;
 }
 
@@ -55,12 +55,12 @@ nav li {
 .nav-link:hover,
 .nav-link-first:hover {
 	color: #f7f7f7;
-	background-color: dodgerblue;
+	background-color: steelblue;
 }
 
 .nav-link-last:hover {
 	color: #f7f7f7;
-	background-color: dodgerblue;
+	background-color: steelblue;
 	border-bottom-right-radius: .78rem;
 }
 
@@ -72,8 +72,8 @@ header {
 .nav-header {
 	font-size: 1.5rem;
 	padding: 20px;
-	color: dodgerblue;
 	font-weight: normal;
+	color: steelblue;
 }
 
 main {
@@ -115,13 +115,13 @@ code {
 .ref:link,
 .ref:visited,
 .ref:active {
-	color: dodgerblue;
+	color: steelblue;
 	text-decoration: none;
 }
 
 .ref:hover {
 	text-decoration: underline;
-	color: dodgerblue;
+	color: steelblue;
 }
 
 footer {
@@ -162,7 +162,7 @@ footer a:hover {
 }
 
 .footer-link:hover {
-	color: dodgerblue;
+	color: steelblue;
 }
 
 @media screen and (max-width: 767px) {
@@ -202,14 +202,14 @@ footer a:hover {
 
 	.nav-link-first:hover {
 		color: #f7f7f7;
-		background-color: dodgerblue;
+		background-color: steelblue;
 		border-top-right-radius: .78rem;
 		border-top-left-radius: .78rem;
 	}
 
 	.nav-link-last:hover {
 		color: #f7f7f7;
-		background-color: dodgerblue;
+		background-color: steelblue;
 		border-bottom-left-radius: .78rem;
 	}
 }

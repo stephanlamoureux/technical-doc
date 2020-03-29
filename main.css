@@ -22,6 +22,7 @@ nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	width: 100%;
 }
 
 nav li {
@@ -55,6 +56,8 @@ header {
 .nav-header {
 	font-size: 1.5rem;
 	padding: 20px;
+	color: dodgerblue;
+	font-weight: normal;
 }
 
 main {

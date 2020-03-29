@@ -45,8 +45,7 @@
 			<section class="main-section" id="grid_elements">
 				<header class="title">Grid Elements</header>
 				<p>A grid layout consists of a parent element, with one or more child elements.</p>
-				<code>
-&#60;div class="grid-container"&#62;
+				<code>&#60;div class="grid-container"&#62;
 	&#60;div class="grid-item"&#62;1&#60;/div&#62;
 	&#60;div class="grid-item"&#62;2&#60;/div&#62;
 	&#60;div class="grid-item"&#62;3&#60;/div&#62;
@@ -56,22 +55,19 @@
 	&#60;div class="grid-item"&#62;7&#60;/div&#62;
 	&#60;div class="grid-item"&#62;8&#60;/div&#62;
 	&#60;div class="grid-item"&#62;9&#60;/div&#62;
-&#60;/div&#62;
-				</code>
+&#60;/div&#62;</code>
 			</section>
 
 			<section class="main-section" id="display_property">
 				<header>Display Property</header>
 				<p>We create a grid container by declaring display: grid or display: inline-grid on an element. As soon as we do this, all direct children of that element become grid items.</p>
-				<code>
-.grid-container {
+				<code>.grid-container {
 	display: grid;
 }
 
 .grid-container {
 	display: inline-grid;
-}
-				</code>
+}</code>
 			</section>
 
 			<section class="main-section" id="grid_columns">
@@ -96,47 +92,37 @@
 					<li>grid-gap</li>
 				</ul>
 				<p>The grid-column-gap property sets the gap between the columns:</p>
-				<code>
-.grid-container {
+				<code>.grid-container {
 	display: grid;
 	grid-column-gap: 50px;
-}
-				</code>
+}</code>
 				<p>The grid-row-gap property sets the gap between the rows:</p>
-				<code>
-.grid-container {
+				<code>.grid-container {
 	display: grid;
 	grid-row-gap: 50px;
-}
-				</code>
+}</code>
 				<p>The grid-gap property is a shorthand property for the grid-column-gap and the grid-row-gap
 					properties:
 				</p>
-				<code>
-.grid-container {
+				<code>.grid-container {
 	display: grid;
 	grid-gap: 50px 100px;
-}
-				</code>
+}</code>
 				<p>The grid-gap property can also be used to set both the row gap and the column gap in one value:</p>
-				<code>
-.grid-container {
+				<code>.grid-container {
 	display: grid;
 	grid-gap: 50px;
-}
-				</code>
+}</code>
 			</section>
 
 			<section class="main-section" id="grid_lines">
 				<header>Grid Lines</header>
 				<p>The lines between columns are called column lines and the lines between rows are called row lines, they are created when you define tracks in the explicit grid.</p>
 				<p>A grid item starting at column line 1, that ends on column line 3:</p>
-				<code>
-.item1 {
+				<code>.item1 {
 	grid-column-start: 1;
 	grid-column-end: 3;
-}
-				</code>
+}</code>
 			</section>
 
 			<section class="main-section" id="references">

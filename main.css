@@ -12,6 +12,8 @@ body {
 	grid-column-gap: 100px;
 }
 
+/* Navbar */
+
 nav {
 	grid-area: navbar;
 	position: fixed;
@@ -88,6 +90,8 @@ header {
 	border-top-right-radius: .78rem;
 }
 
+/* Main Section */
+
 main {
 	grid-area: main;
 	padding: 25px 50px 0 50px;
@@ -124,6 +128,8 @@ code {
 	padding: 10px 0 10px 20px;
 }
 
+/* References */
+
 .ref:link,
 .ref:visited,
 .ref:active {
@@ -136,8 +142,9 @@ code {
 	color: steelblue;
 }
 
+/* Footer */
+
 footer {
-	margin-top: 40px;
 	padding-top: 5px;
 }
 
@@ -156,6 +163,9 @@ footer a:hover {
 	color: black;
 	text-align: center;
 	margin: 20px 0;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
 }
 
 .my-links {
@@ -177,6 +187,7 @@ footer a:hover {
 	color: steelblue;
 }
 
+
 @media screen and (max-width: 767px) {
 	.wrapper {
 		grid-template-columns: 1fr;
@@ -196,12 +207,13 @@ footer a:hover {
 		height: 220px;
 		overflow-x: hidden;
 		overflow-y: auto;
+		border-bottom-left-radius: 1rem;
+		border-top-right-radius: 0;
 	}
 
-	nav header {
+	.nav-header {
 		text-align: center;
-		padding: 0;
-		margin: 0;
+		border-top-right-radius: 0;
 	}
 
 	nav li {
@@ -214,6 +226,9 @@ footer a:hover {
 		padding: 10px 0;
 	}
 
+	.nav-link-last {
+		border-bottom-left-radius: .78rem;
+	}
 }
 
 @media screen and (max-width: 1023px) {

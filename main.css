@@ -9,7 +9,7 @@ body {
 	grid-template-columns: minmax(200px, auto) 1fr;
 	grid-template-areas:
 		"navbar main";
-	grid-column-gap: 80px;
+	grid-column-gap: 100px;
 }
 
 nav {
@@ -33,6 +33,10 @@ nav li {
 	border-top: 1px solid slategray;
 }
 
+nav li:nth-child(-n+8) {
+	background-color: #2F3341;
+}
+
 .nav-link,
 .nav-link-first,
 .nav-link-last {
@@ -49,13 +53,18 @@ nav li {
 .nav-link-first:visited,
 .nav-link-last:visited,
 .nav-link:visited {
-	color: black;
+	color: white;
 }
 
 .nav-link:hover,
 .nav-link-first:hover {
 	color: white;
 	background-color: steelblue;
+}
+
+.nav-link-last {
+	background-color: #2F3341;
+	border-bottom-right-radius: .78rem;
 }
 
 .nav-link-last:hover {
@@ -74,11 +83,15 @@ header {
 	padding: 20px;
 	font-weight: normal;
 	color: steelblue;
+	background-color: #A3BE8C;
+	color: white;
+	border-top-right-radius: .78rem;
 }
 
 main {
 	grid-area: main;
-	padding: 25px 50px 0 0;
+	padding: 25px 50px 0 50px;
+	margin-right: 12rem;
 }
 
 section {
@@ -174,12 +187,12 @@ footer a:hover {
 
 	main {
 		padding: 0 20px;
+		margin: 0;
 	}
 
 	nav {
 		position: inherit;
 		border-right: none;
-		border-radius: 1rem;
 		height: 220px;
 		overflow-x: hidden;
 		overflow-y: auto;
@@ -187,30 +200,20 @@ footer a:hover {
 
 	nav header {
 		text-align: center;
-		width: 95%;
-		margin: 0 auto;
+		padding: 0;
+		margin: 0;
 	}
 
 	nav li {
 		text-align: center;
 	}
 
-	nav li:first-child {
-		border-radius: 1rem;
+	.nav-link,
+	.nav-link-first,
+	.nav-link-last {
+		padding: 10px 0;
 	}
 
-	.nav-link-first:hover {
-		color: white;
-		background-color: steelblue;
-		border-top-right-radius: .78rem;
-		border-top-left-radius: .78rem;
-	}
-
-	.nav-link-last:hover {
-		color: white;
-		background-color: steelblue;
-		border-bottom-left-radius: .78rem;
-	}
 }
 
 @media screen and (max-width: 1023px) {
@@ -220,5 +223,6 @@ footer a:hover {
 
 	main {
 		padding: 25px 20px 0 20px;
+		margin: 0;
 	}
 }

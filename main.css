@@ -212,7 +212,7 @@ footer a:hover {
 		height: 220px;
 		overflow-x: hidden;
 		overflow-y: auto;
-		border-bottom-left-radius: 1rem;
+		border-bottom-right-radius: 0;
 		border-top-right-radius: 0;
 	}
 
@@ -232,7 +232,7 @@ footer a:hover {
 	}
 
 	.nav-link-last {
-		border-bottom-left-radius: .78rem;
+		border-bottom-right-radius: 0;
 	}
 }
 

@@ -33,4 +33,4 @@ Once you're done, submit the URL to your working project with all its tests pass
 - Remember to use the Read-Search-Ask method if you get stuck.
 
 ### Completed Project
-https://slamoureux.github.io/technical-doc/
+https://stephanlamoureux.github.io/technical-doc/

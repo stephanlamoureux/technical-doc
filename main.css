@@ -200,6 +200,20 @@ footer a:hover {
 	color: steelblue;
 }
 
+/* Media Queries */
+
+@media (max-width: 1600px) {
+	main {
+		margin-right: 8rem;
+	}
+}
+
+@media (max-width: 1300px) {
+	main {
+		margin-right: 0;
+		padding-left: 0;
+	}
+}
 
 @media screen and (max-width: 767px) {
 	.wrapper {

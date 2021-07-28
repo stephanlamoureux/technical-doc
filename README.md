@@ -11,6 +11,7 @@ Fulfill the below user stories and get all of the tests to pass. Give it your ow
 You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
 
 ### Content
+
 - User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
 - User Story #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.
 - User Story #3: The first element within each .main-section should be a header element which contains text that describes the topic of that section.
@@ -27,10 +28,11 @@ You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is rec
 - User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
 - User Story #15: My Technical Documentation page should use at least one media query.
 
-You can build your project by forking this CodePen pen. Or you can use this CDN link to run the tests in any environment you like: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
+You can build your project by forking this CodePen pen. Or you can use [this](https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js) CDN link to run the tests in any environment you like.
 
 Once you're done, submit the URL to your working project with all its tests passing.
 - Remember to use the Read-Search-Ask method if you get stuck.
 
 ### Completed Project
+
 https://stephanlamoureux.github.io/technical-doc/

@@ -6,19 +6,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Technical Documentation Page - for the freeCodeCamp Responsive Design Certificate.">
 	<link rel="icon" type="image/png" href="images/favicon.png">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/nord.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
+	<script>
+		hljs.initHighlightingOnLoad();
+	</script>
 	<title>The CSS Grid Layout Module</title>
 </head>
 
 <body>
 
-	<!-- freeCodeCamp Test Suite
-	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    -->
+	<!-- freeCodeCamp Test Suite -->
+	<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 	<div class="wrapper">
 		<nav id="navbar">
 			<header class="nav-header">CSS Grid Layout</header>
@@ -38,34 +40,42 @@
 		<main id="main-doc">
 			<section class="main-section" id="grid_layout">
 				<header class="title">Grid Layout</header>
-				<p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
-				<p>Like tables, grid layout enables an author to align elements into columns and rows. However, many more layouts are either possible or easier with CSS grid than they were with tables. For example, a grid container's child elements could position themselves so they actually overlap and layer, similar to CSS positioned elements.</p>
+				<p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to
+					design web pages without having to use floats and positioning.</p>
+				<p>Like tables, grid layout enables an author to align elements into columns and rows. However, many more
+					layouts are either possible or easier with CSS grid than they were with tables. For example, a grid
+					container's child elements could position themselves so they actually overlap and layer, similar to CSS
+					positioned elements.</p>
 			</section>
 
 			<section class="main-section" id="browser_support">
 				<header>Browser Support</header>
-				<p>Other than in Internet Explorer, CSS Grid Layout is unprefixed in Safari, Chrome, Opera,  Firefox and Edge. Support for all the properties and values detailed in these guides is interoperable across browsers. This means that if you write some Grid Layout code in Firefox, it should work in the same way in Chrome. This is no longer an experimental specification, and you are safe to use it in production.</p>
+				<p>Other than in Internet Explorer, CSS Grid Layout is unprefixed in Safari, Chrome, Opera, Firefox and Edge.
+					Support for all the properties and values detailed in these guides is interoperable across browsers. This
+					means that if you write some Grid Layout code in Firefox, it should work in the same way in Chrome. This is no
+					longer an experimental specification, and you are safe to use it in production.</p>
 			</section>
 
 			<section class="main-section" id="grid_elements">
 				<header class="title">Grid Elements</header>
 				<p>A grid layout consists of a parent element, with one or more child elements.</p>
 				<pre><code class="html">&#60;div class="grid-container"&#62;
-	&#60;div class="grid-item"&#62;1&#60;/div&#62;
-	&#60;div class="grid-item"&#62;2&#60;/div&#62;
-	&#60;div class="grid-item"&#62;3&#60;/div&#62;
-	&#60;div class="grid-item"&#62;4&#60;/div&#62;
-	&#60;div class="grid-item"&#62;5&#60;/div&#62;
-	&#60;div class="grid-item"&#62;6&#60;/div&#62;
-	&#60;div class="grid-item"&#62;7&#60;/div&#62;
-	&#60;div class="grid-item"&#62;8&#60;/div&#62;
-	&#60;div class="grid-item"&#62;9&#60;/div&#62;
+  &#60;div class="grid-item"&#62;1&#60;/div&#62;
+  &#60;div class="grid-item"&#62;2&#60;/div&#62;
+  &#60;div class="grid-item"&#62;3&#60;/div&#62;
+  &#60;div class="grid-item"&#62;4&#60;/div&#62;
+  &#60;div class="grid-item"&#62;5&#60;/div&#62;
+  &#60;div class="grid-item"&#62;6&#60;/div&#62;
+  &#60;div class="grid-item"&#62;7&#60;/div&#62;
+  &#60;div class="grid-item"&#62;8&#60;/div&#62;
+  &#60;div class="grid-item"&#62;9&#60;/div&#62;
 &#60;/div&#62;</code></pre>
 			</section>
 
 			<section class="main-section" id="display_property">
 				<header>Display Property</header>
-				<p>We create a grid container by declaring display: grid or display: inline-grid on an element. As soon as we do this, all direct children of that element become grid items.</p>
+				<p>We create a grid container by declaring display: grid or display: inline-grid on an element. As soon as we do
+					this, all direct children of that element become grid items.</p>
 				<pre><code class="css">.grid-container {
 	display: grid;
 }
@@ -77,19 +87,29 @@
 
 			<section class="main-section" id="grid_columns">
 				<header>Grid Columns</header>
-				<p>A grid column is a vertical track in a CSS Grid Layout, and is the space between two vertical grid lines. It is defined by the grid-template-columns property or in the shorthand grid or grid-template properties.</p>
-				<p>In addition, columns may be created in the implicit grid when items are placed outside of columns created in the explicit grid. These columns will be auto-sized by default, or can have a size specified with the grid-auto-columns property. When working with alignment in CSS Grid Layout, the axis down which columns run is known as the block, or column, axis.</p>
+				<p>A grid column is a vertical track in a CSS Grid Layout, and is the space between two vertical grid lines. It
+					is defined by the grid-template-columns property or in the shorthand grid or grid-template properties.</p>
+				<p>In addition, columns may be created in the implicit grid when items are placed outside of columns created in
+					the explicit grid. These columns will be auto-sized by default, or can have a size specified with the
+					grid-auto-columns property. When working with alignment in CSS Grid Layout, the axis down which columns run is
+					known as the block, or column, axis.</p>
 			</section>
 
 			<section class="main-section" id="grid_rows">
 				<header>Grid Rows</header>
-				<p>A grid row is a horizontal track in a CSS Grid Layout, that is the space between two horizontal grid lines. It is defined by the grid-template-rows property or in the shorthand grid or grid-template properties.</p>
-				<p>In addition, rows may be created in the implicit grid when items are placed outside of rows created in the explicit grid. These rows will be auto sized by default, or can have a size specified with the grid-auto-rows property. When working with alignment in CSS Grid Layout, the axis along which rows run is known as the inline, or row, axis.</p>
+				<p>A grid row is a horizontal track in a CSS Grid Layout, that is the space between two horizontal grid lines.
+					It is defined by the grid-template-rows property or in the shorthand grid or grid-template properties.</p>
+				<p>In addition, rows may be created in the implicit grid when items are placed outside of rows created in the
+					explicit grid. These rows will be auto sized by default, or can have a size specified with the grid-auto-rows
+					property. When working with alignment in CSS Grid Layout, the axis along which rows run is known as the
+					inline, or row, axis.</p>
 			</section>
 
 			<section class="main-section" id="grid_gaps">
 				<header>Grid Gaps</header>
-				<p>The spaces between each column/row are called gaps. Instead of creating empty grid tracks or trying to hack things up with margins, grid-gap is a property available on grid containers that makes it easy to create gutters in your CSS Grid layouts.</p>
+				<p>The spaces between each column/row are called gaps. Instead of creating empty grid tracks or trying to hack
+					things up with margins, grid-gap is a property available on grid containers that makes it easy to create
+					gutters in your CSS Grid layouts.</p>
 				<p>You can adjust the gap size by using one of the following properties:</p>
 				<ul>
 					<li>grid-column-gap</li>
@@ -122,7 +142,8 @@
 
 			<section class="main-section" id="grid_lines">
 				<header>Grid Lines</header>
-				<p>The lines between columns are called column lines and the lines between rows are called row lines, they are created when you define tracks in the explicit grid.</p>
+				<p>The lines between columns are called column lines and the lines between rows are called row lines, they are
+					created when you define tracks in the explicit grid.</p>
 				<p>A grid item starting at column line 1, that ends on column line 3:</p>
 				<pre><code class="css">.item1 {
 	grid-column-start: 1;
@@ -142,16 +163,18 @@
 	</div>
 	<footer>
 		<div id="name" class="name">
-			<p>Coded by Stephan Lamoureux for <a href="https://www.freecodecamp.org/stephanlamoureux" target="_blank"> freeCodeCamp <i class="fa fa-free-code-camp"></i></a></p>
+			<p>Coded by Stephan Lamoureux for <a href="https://www.freecodecamp.org/stephanlamoureux" target="_blank">
+					freeCodeCamp <i class="fa fa-free-code-camp"></i></a></p>
 		</div>
 		<div class="my-links">
-		  <a href="https://github.com/stephanlamoureux/technical-doc" target="_blank" class="footer-link">
-			<i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-		  <a href="https://codepen.io/stephanlamoureux/pen/zYGymam" target="_blank" class="footer-link">
-			<i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a>
-		  <a href="https://twitter.com/sa_lamoureux" target="_blank" class="footer-link">
-			<i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+			<a href="https://github.com/stephanlamoureux/technical-doc" target="_blank" class="footer-link">
+				<i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+			<a href="https://codepen.io/stephanlamoureux/pen/zYGymam" target="_blank" class="footer-link">
+				<i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a>
+			<a href="https://twitter.com/sa_lamoureux" target="_blank" class="footer-link">
+				<i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
 		</div>
-	  </footer>
+	</footer>
 </body>
+
 </html>

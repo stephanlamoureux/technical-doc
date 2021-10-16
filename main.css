@@ -88,6 +88,7 @@ header {
 	background-color: #A3BE8C;
 	color: white;
 	border-top-right-radius: .78rem;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
 }
 
 /* Main Section */
@@ -132,7 +133,7 @@ code {
 
 code.html.hljs.xml,
 code.css.hljs {
-	padding: 10px 0 10px 20px;
+	padding: 10px 20px 10px 20px;
 }
 
 
@@ -215,9 +216,14 @@ footer a:hover {
 	}
 }
 
-@media screen and (max-device-width: 767px) {
-	nav {
-		overflow-y: auto;
+@media screen and (max-width: 1023px) {
+	.wrapper {
+		grid-column-gap: 40px;
+	}
+
+	main {
+		padding: 25px 20px 0 20px;
+		margin: 0;
 	}
 }
 
@@ -260,16 +266,5 @@ footer a:hover {
 
 	.nav-link-last {
 		border-bottom-right-radius: 0;
-	}
-}
-
-@media screen and (max-width: 1023px) {
-	.wrapper {
-		grid-column-gap: 40px;
-	}
-
-	main {
-		padding: 25px 20px 0 20px;
-		margin: 0;
 	}
 }

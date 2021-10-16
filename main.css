@@ -237,7 +237,6 @@ footer a:hover {
 	nav {
 		position: inherit;
 		border-right: none;
-		height: 220px;
 		overflow: hidden;
 		border-bottom-right-radius: 0;
 		border-top-right-radius: 0;
@@ -261,13 +260,6 @@ footer a:hover {
 
 	.nav-link-last {
 		border-bottom-right-radius: 0;
-	}
-}
-
-@media screen and (max-device-width: 767px) {
-	nav {
-		overflow-y: auto;
-		height: initial;
 	}
 }
 

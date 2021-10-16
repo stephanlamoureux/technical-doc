@@ -215,6 +215,12 @@ footer a:hover {
 	}
 }
 
+@media screen and (max-device-width: 767px) {
+	nav {
+		overflow-y: auto;
+	}
+}
+
 @media screen and (max-width: 767px) {
 	.wrapper {
 		grid-template-columns: 1fr;
@@ -232,10 +238,10 @@ footer a:hover {
 		position: inherit;
 		border-right: none;
 		height: 220px;
-		overflow-x: hidden;
-		overflow-y: auto;
+		overflow: hidden;
 		border-bottom-right-radius: 0;
 		border-top-right-radius: 0;
+		height: 100%;
 	}
 
 	.nav-header {
@@ -255,6 +261,13 @@ footer a:hover {
 
 	.nav-link-last {
 		border-bottom-right-radius: 0;
+	}
+}
+
+@media screen and (max-device-width: 767px) {
+	nav {
+		overflow-y: auto;
+		height: initial;
 	}
 }
 

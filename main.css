@@ -244,7 +244,7 @@ footer a:hover {
 		position: inherit;
 		border-right: none;
 		overflow: hidden;
-		border-bottom-right-radius: 0;
+		border-bottom-right-radius: .78rem;
 		border-top-right-radius: 0;
 		height: 100%;
 	}
